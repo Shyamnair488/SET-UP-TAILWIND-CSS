@@ -1,0 +1,54 @@
+install node
+the create 
+    dist
+        index.html
+    src
+
+then go in terminal of vs code then paste :-npm install -D tailwindcss
+                                            npx tailwindcss init  // node package utility tailwing package and initialize
+
+now u will see a tailwind.config.js in ur forlder
+
+then create a file named input.css in src 
+
+
+then go to input.css and add the lines below
+                                                        @tailwind base;
+                                                        @tailwind components;
+                                                        @tailwind utilities;
+
+                                                        if any error occuerd then click " ctrl+," thne type unknown and ignore the error
+
+install extensions like Tailwind CSS IntelliSense,Tailwind CSS IntelliSense with Hex Colors in vs code 
+
+now go to your html page and andd the script in head "   <script src="https://cdn.tailwindcss.com"></script>"  in it
+
+now for direct update 
+
+then go to ur tailwind.config.js file and update the data to /** @type {import('tailwindcss').Config} */
+                                                            module.exports = {
+                                                            content: ["./dist/index.html"],
+                                                            theme: {
+                                                                extend: {},
+                                                            },
+                                                            plugins: [],
+                                                            }
+
+
+then in cmd  write a code npx tailwindcss -i ./src/input.css -o ./dist/style.css     // input and output foleder to be mentioned correctly
+this will add the real time data into ur css file and link it with ur html file which is required only to 
+
+now i have to run it many time to do so  we use npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch
+
+now update ur code of in to 
+                    module.exports = {
+                        content: ["./dist/*.html"],                      //Changes
+                        theme: {
+                            extend: {},
+                        },
+                        plugins: [],
+                        }
+
+
+now if u can work on it and start building ur website using this 
+if u dont remember any commands then  u can use the link of tailwind documnet "https://tailwindcss.com/docs/installation" and search it accordingly and start working on it.
