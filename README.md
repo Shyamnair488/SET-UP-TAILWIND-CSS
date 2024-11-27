@@ -1,6 +1,3 @@
-Here's the corrected and complete version of your `README.md` file for setting up Tailwind CSS in your project:
-
-```markdown
 # Tailwind CSS Setup Guide for Your Project
 
 This guide will help you set up a project with Tailwind CSS for building your website. Follow these steps to get started.
